@@ -1,6 +1,6 @@
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import LoginScreen from '../Screens/Authentication/login/Index';
+import { NavigationConstant } from '../utils/Screens';
 
 const Stack = createNativeStackNavigator();
 const RootNavigation = () => {
@@ -24,11 +24,18 @@ const RootNavigation = () => {
           close: {animation: 'timing', config: {duration: 300}},
         },
       })}>
-      <Stack.Screen
-        name="Home"
-        component={LoginScreen}
-        options={{title: 'Welcome'}}
-      />
+        {
+          NavigationConstant.map((item,index)=>{
+            return (
+              <Stack.Screen
+              key={index}
+                name={item.name}
+                component={item.component}
+                options={{title: 'Welcome'}}
+              />
+            )
+          })
+        }
     </Stack.Navigator>
   );
 };

@@ -1,8 +1,8 @@
 import {View, Text, TouchableOpacity} from 'react-native';
 import React, {useState} from 'react';
-import {Colors} from '../../utils/Colors';
+import {COLORS, Colors} from '../../utils/Colors';
 import {styles} from './styles';
-import CommonLoader from '../CommonLoader/CommonLoader';
+import { ActivityIndicator } from 'react-native';
 
 interface button {
   onPress: () => any | undefined;
@@ -33,10 +33,11 @@ const CommonButton = ({
         isLoading && styles.buttonWithLoading
       ]}
       onPress={handlePress}>
-      <Text style={styles.buttonText}>
+      {!isLoading ?
+        <Text style={styles.buttonText}>
         {buttonText !== '' ? buttonText : 'Continue'}
-      </Text>
-      {isLoading && <CommonLoader />}
+      </Text> :
+      <ActivityIndicator color={COLORS.PRIMARY_WHITE} size={18} />}
     </TouchableOpacity>
   );
 };
