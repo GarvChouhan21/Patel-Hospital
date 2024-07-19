@@ -17,8 +17,13 @@
 		18052E3F2C493D3E002FAF6E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18052E3D2C493D29002FAF6E /* Launch Screen.storyboard */; };
 		2953EE0497FF42D6BBDD2181 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67339B6C12EE47B78885716C /* Montserrat-Black.ttf */; };
 		325F55341D1A4F1EA4ABBD29 /* Montserrat-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD46E194918D4D4E8AAFEF97 /* Montserrat-ThinItalic.ttf */; };
+<<<<<<< HEAD
 		34A8589C396DB8F2E2D76B2D /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 5C854FC4FD9EB481C978FBEB /* PrivacyInfo.xcprivacy */; };
 		3C466B1830F84B0DA35D2E0C /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CD4E128C51C4ED38A6EE335 /* Montserrat-SemiBold.ttf */; };
+=======
+		3C466B1830F84B0DA35D2E0C /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CD4E128C51C4ED38A6EE335 /* Montserrat-SemiBold.ttf */; };
+		44A9BDA14F8239D54C5CF0FE /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 014743AE98C5FC903C979A38 /* PrivacyInfo.xcprivacy */; };
+>>>>>>> main
 		54DBDFBF0FF24FBF8A7E4E56 /* Montserrat-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D26A59EAEB144BC6A138D5B5 /* Montserrat-ExtraLightItalic.ttf */; };
 		5BC15A3BD97F4DD98D667B90 /* Montserrat-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 219AA2A6393C49F9B821C6E6 /* Montserrat-MediumItalic.ttf */; };
 		5FA666985DD8435F96C5456A /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EB4A8F06F1A484CB290CCD7 /* Montserrat-Light.ttf */; };
@@ -320,6 +325,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
+=======
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				44A9BDA14F8239D54C5CF0FE /* PrivacyInfo.xcprivacy in Resources */,
+>>>>>>> main
 				2953EE0497FF42D6BBDD2181 /* Montserrat-Black.ttf in Resources */,
 				D8F5BA8E26564E21A677BE9E /* Montserrat-BlackItalic.ttf in Resources */,
 				003DD078CD90492F880E00E4 /* Montserrat-Bold.ttf in Resources */,
@@ -339,7 +349,10 @@
 				8DC3B6B5A64A4ABFA00F0025 /* Montserrat-SemiBoldItalic.ttf in Resources */,
 				FE7E82D343D34C7DBED780BF /* Montserrat-Thin.ttf in Resources */,
 				325F55341D1A4F1EA4ABBD29 /* Montserrat-ThinItalic.ttf in Resources */,
+<<<<<<< HEAD
 				34A8589C396DB8F2E2D76B2D /* PrivacyInfo.xcprivacy in Resources */,
+=======
+>>>>>>> main
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
