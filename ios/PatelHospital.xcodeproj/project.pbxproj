@@ -10,9 +10,8 @@
 		00E356F31AD99517003FC87E /* PatelHospitalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* PatelHospitalTests.m */; };
 		0C80B921A6F3F58F76C31292 /* libPods-PatelHospital.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-PatelHospital.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
-		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		44A9BDA14F8239D54C5CF0FE /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 014743AE98C5FC903C979A38 /* PrivacyInfo.xcprivacy */; };
+		7160B7E18E36CA07AD84BD90 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 95D4715A61F0ED3F99C6F99E /* PrivacyInfo.xcprivacy */; };
 		7699B88040F8A987B510C191 /* libPods-PatelHospital-PatelHospitalTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-PatelHospital-PatelHospitalTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -31,7 +30,7 @@
 		00E356EE1AD99517003FC87E /* PatelHospitalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PatelHospitalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* PatelHospitalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PatelHospitalTests.m; sourceTree = "<group>"; };
-		014743AE98C5FC903C979A38 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = PatelHospital/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		014743AE98C5FC903C979A38 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = PatelHospital/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* PatelHospital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PatelHospital.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = PatelHospital/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = PatelHospital/AppDelegate.mm; sourceTree = "<group>"; };
@@ -39,6 +38,25 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = PatelHospital/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = PatelHospital/main.m; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = PatelHospital/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		18A51AB82C4941A70069F223 /* AntDesign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AntDesign.ttf; sourceTree = "<group>"; };
+		18A51AB92C4941A70069F223 /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Entypo.ttf; sourceTree = "<group>"; };
+		18A51ABA2C4941A70069F223 /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilIcons.ttf; sourceTree = "<group>"; };
+		18A51ABB2C4941A70069F223 /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Feather.ttf; sourceTree = "<group>"; };
+		18A51ABC2C4941A70069F223 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		18A51ABD2C4941A70069F223 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Brands.ttf; sourceTree = "<group>"; };
+		18A51ABE2C4941A70069F223 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Regular.ttf; sourceTree = "<group>"; };
+		18A51ABF2C4941A70069F223 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Solid.ttf; sourceTree = "<group>"; };
+		18A51AC02C4941A70069F223 /* FontAwesome6_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome6_Brands.ttf; sourceTree = "<group>"; };
+		18A51AC12C4941A70069F223 /* FontAwesome6_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome6_Regular.ttf; sourceTree = "<group>"; };
+		18A51AC22C4941A70069F223 /* FontAwesome6_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome6_Solid.ttf; sourceTree = "<group>"; };
+		18A51AC32C4941A70069F223 /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fontisto.ttf; sourceTree = "<group>"; };
+		18A51AC42C4941A70069F223 /* Foundation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Foundation.ttf; sourceTree = "<group>"; };
+		18A51AC52C4941A70069F223 /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ionicons.ttf; sourceTree = "<group>"; };
+		18A51AC62C4941A70069F223 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialCommunityIcons.ttf; sourceTree = "<group>"; };
+		18A51AC72C4941A70069F223 /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
+		18A51AC82C4941A70069F223 /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octicons.ttf; sourceTree = "<group>"; };
+		18A51AC92C4941A70069F223 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
+		18A51ACA2C4941A70069F223 /* Zocial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zocial.ttf; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-PatelHospital-PatelHospitalTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PatelHospital-PatelHospitalTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4392A12AC88292D35C810B /* Pods-PatelHospital.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PatelHospital.debug.xcconfig"; path = "Target Support Files/Pods-PatelHospital/Pods-PatelHospital.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-PatelHospital.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PatelHospital.release.xcconfig"; path = "Target Support Files/Pods-PatelHospital/Pods-PatelHospital.release.xcconfig"; sourceTree = "<group>"; };
@@ -46,6 +64,7 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-PatelHospital.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PatelHospital.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = PatelHospital/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-PatelHospital-PatelHospitalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PatelHospital-PatelHospitalTests.release.xcconfig"; path = "Target Support Files/Pods-PatelHospital-PatelHospitalTests/Pods-PatelHospital-PatelHospitalTests.release.xcconfig"; sourceTree = "<group>"; };
+		95D4715A61F0ED3F99C6F99E /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = PatelHospital/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -89,6 +108,7 @@
 		13B07FAE1A68108700A75B9A /* PatelHospital */ = {
 			isa = PBXGroup;
 			children = (
+				18A51ACB2C4941A70069F223 /* Fonts */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -97,8 +117,36 @@
 				13B07FB71A68108700A75B9A /* main.m */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
 				014743AE98C5FC903C979A38 /* PrivacyInfo.xcprivacy */,
+				95D4715A61F0ED3F99C6F99E /* PrivacyInfo.xcprivacy */,
 			);
 			name = PatelHospital;
+			sourceTree = "<group>";
+		};
+		18A51ACB2C4941A70069F223 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				18A51AB82C4941A70069F223 /* AntDesign.ttf */,
+				18A51AB92C4941A70069F223 /* Entypo.ttf */,
+				18A51ABA2C4941A70069F223 /* EvilIcons.ttf */,
+				18A51ABB2C4941A70069F223 /* Feather.ttf */,
+				18A51ABC2C4941A70069F223 /* FontAwesome.ttf */,
+				18A51ABD2C4941A70069F223 /* FontAwesome5_Brands.ttf */,
+				18A51ABE2C4941A70069F223 /* FontAwesome5_Regular.ttf */,
+				18A51ABF2C4941A70069F223 /* FontAwesome5_Solid.ttf */,
+				18A51AC02C4941A70069F223 /* FontAwesome6_Brands.ttf */,
+				18A51AC12C4941A70069F223 /* FontAwesome6_Regular.ttf */,
+				18A51AC22C4941A70069F223 /* FontAwesome6_Solid.ttf */,
+				18A51AC32C4941A70069F223 /* Fontisto.ttf */,
+				18A51AC42C4941A70069F223 /* Foundation.ttf */,
+				18A51AC52C4941A70069F223 /* Ionicons.ttf */,
+				18A51AC62C4941A70069F223 /* MaterialCommunityIcons.ttf */,
+				18A51AC72C4941A70069F223 /* MaterialIcons.ttf */,
+				18A51AC82C4941A70069F223 /* Octicons.ttf */,
+				18A51AC92C4941A70069F223 /* SimpleLineIcons.ttf */,
+				18A51ACA2C4941A70069F223 /* Zocial.ttf */,
+			);
+			name = Fonts;
+			path = "../node_modules/react-native-vector-icons/Fonts";
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -247,8 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
-				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				44A9BDA14F8239D54C5CF0FE /* PrivacyInfo.xcprivacy in Resources */,
+				7160B7E18E36CA07AD84BD90 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,11 +637,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-Wl",
-					"-ld_classic",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
@@ -666,11 +709,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-Wl",
-					"-ld_classic",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
