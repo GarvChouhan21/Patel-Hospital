@@ -5,6 +5,10 @@ import SplashScreen from 'react-native-splash-screen';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {NavigationContainer} from '@react-navigation/native';
 import RootNavigation from './src/Navigation/RootNavigation';
+import HeaderComponent from './src/commonComponents/Header';
+import Test from './src/commonComponents/Header/Test';
+import BottomSheet from './src/commonComponents/Header/BottomSheet';
+
 
 const Stack = createNativeStackNavigator();
 const App = () => {
@@ -17,8 +21,12 @@ const App = () => {
   return (
     <View style={styles.container}>
       <NavigationContainer>
-        <RootNavigation />
-      </NavigationContainer>
+        {/* <RootNavigation /> */}
+        <Test />
+        {/* <BottomSheet /> */}
+      </NavigationContainer> 
+      {/* <HeaderComponent />*/}
+      
     </View>
   );
 };
