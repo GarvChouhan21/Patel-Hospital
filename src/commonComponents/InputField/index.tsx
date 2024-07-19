@@ -3,14 +3,7 @@ import React, {useEffect, useRef, useState} from 'react';
 import {Controller, useForm, useFormState} from 'react-hook-form';
 import {styles} from './styles';
 import { COLORS } from '../../utils/Colors';
-// import {Colors} from '../../utils/Colors';
-// import {
-//   CheckedIcon,
-//   CloseEyeIcon,
-//   OpenEyeIcon,
-//   UncheckedIcon,
-// } from '../../../assets/images';
-
+import Icons from 'react-native-vector-icons/MaterialIcons'
 export const InputField = ({
   multiline = false,
   label = '',
@@ -21,12 +14,9 @@ export const InputField = ({
   customStyle,
   keyboardType,
   secureTextEntry = false,
-  inputType = 'normal',
   editable = true,
   defaultValue = '',
   containerStyle,
-  phoneInput,
-  defaultCode,
 }: any) => {
   const {errors}: any = useFormState({control});
   const [secureEntry, setSecureEntry] = useState<boolean>(secureTextEntry);
@@ -34,7 +24,7 @@ export const InputField = ({
 
   return (
     <View style={[styles.inputContainer, containerStyle]}>
-      {label !== '' && <Text style={styles.labelTextStyle}>{label}</Text>}
+     <Text style={styles.labelTextStyle}>{label}</Text>
       <Controller
         defaultValue={defaultValue}
         control={control}
@@ -53,7 +43,7 @@ export const InputField = ({
                   <TextInput
                     allowFontScaling={false}
                     placeholder={`${inputlabel}`}
-                    placeholderTextColor={COLORS.secondaryGray}
+                    placeholderTextColor={COLORS.SECONDARY_GRAY}
                     onChangeText={text => field.onChange(text)}
                     multiline={multiline}
                     secureTextEntry={secureEntry}
@@ -73,12 +63,12 @@ export const InputField = ({
                       {secureEntry ? (
                         <TouchableOpacity
                           onPress={() => setSecureEntry(!secureEntry)}>
-                          {/* <OpenEyeIcon /> */}
+                           <Icons name='visibility' size={18}></Icons>
                         </TouchableOpacity>
                       ) : (
                         <TouchableOpacity
                           onPress={() => setSecureEntry(!secureEntry)}>
-                          {/* <CloseEyeIcon /> */}
+                          <Icons name='visibility-off' size={18}></Icons>
                         </TouchableOpacity>
                       )}
                     </View>

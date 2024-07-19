@@ -1,10 +1,15 @@
 export const COLORS={
-secondaryGray:'#5C5C5C',
-primaryBlack:'#000000',
+SECONDARY_GRAY:'#5C5C5C',
+PRIMARY_BLACK:'#000000',
 
+APPBACK_GROUND:'#EFF8FC',
 //inputBackGround
-primaryWhite:'#FFFFFF',
-secondaryWhite:'#ECEDF0'
+PRIMARY_WHITE:'#FFFFFF',
+SECONDARY_WHITE:'#ECEDF0',
+
+PRIMARY_BLUE:'#4490DF',
+SECONDARY_BLUE:'#254C93',
+PRIMARY_RED:'#F00'
 }
 
 export const FONTS={

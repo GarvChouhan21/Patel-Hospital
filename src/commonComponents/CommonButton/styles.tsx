@@ -1,5 +1,6 @@
 import {StyleSheet} from 'react-native';
-import {Colors, Fonts} from '../../utils/Colors';
+import {COLORS, FONTS} from '../../utils/Colors';
+import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 export const styles = StyleSheet.create({
   socialLoginButtonContainer: {
@@ -12,14 +13,14 @@ export const styles = StyleSheet.create({
     marginHorizontal: 16,
     marginVertical: 8,
     borderRadius: 12,
-    borderColor: Colors.primaryPlaceholder,
+    borderColor: COLORS.SECONDARY_GRAY,
   },
   TextStyle: {
     fontSize: 16,
     fontWeight: '600',
     lineHeight: 21.94,
-    fontFamily: Fonts.MONTESERRAT_SEMIBOLD,
-    color: Colors.primaryBlack
+    fontFamily: FONTS.MONTESERRAT_SEMIBOLD,
+    color: COLORS.PRIMARY_BLACK
   },
 
   button: {
@@ -39,14 +40,14 @@ export const styles = StyleSheet.create({
   buttonText: {
     fontSize: 16,
     fontWeight: '600',
-    color: Colors.primaryWhite,
-    fontFamily: Fonts.MONTESERRAT_SEMIBOLD
+    color: COLORS.PRIMARY_WHITE,
+    fontFamily: FONTS.MONTESERRAT_SEMIBOLD
   },
   selectedButton: {
-    backgroundColor: Colors.primaryBlue,
+    backgroundColor: COLORS.PRIMARY_BLUE,
   },
   unselectedButton: {
-    backgroundColor: Colors.primaryGray
+    backgroundColor: COLORS.SECONDARY_GRAY
   },
 
   OutLineButtonContainer: {
@@ -60,7 +61,7 @@ export const styles = StyleSheet.create({
   outlineButtonText: {
     fontSize: 16,
     fontWeight: '600',
-    color: Colors.primaryRed,
-    fontFamily: Fonts.MONTESERRAT_SEMIBOLD
+    color: COLORS.PRIMARY_RED,
+    fontFamily: FONTS.MONTESERRAT_SEMIBOLD
   },
 });

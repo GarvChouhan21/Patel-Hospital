@@ -3,7 +3,6 @@ import { COLORS, FONTS } from '../../utils/Colors';
 
 export const styles = StyleSheet.create({
   inputContainer: {
-    marginHorizontal: 14,
     marginVertical: 10,
     gap: 8,
   },
@@ -13,21 +12,21 @@ export const styles = StyleSheet.create({
     padding: 0,
     margin:0,
     height:45,
-    color:COLORS.primaryBlack
+    color:COLORS.PRIMARY_BLACK
   },
   labelTextStyle: {
     fontSize: 16,
     fontWeight: '600',
     fontFamily: FONTS.MONTESERRAT_SEMIBOLD,
-    color: COLORS.primaryBlack,
+    color: COLORS.PRIMARY_BLACK,
   },
   commonContainerStyle: {
     width: '100%',
     paddingHorizontal: 10,
     justifyContent: 'center',
     borderRadius: 10,
-    backgroundColor: COLORS.primaryWhite,
-    borderColor: COLORS.secondaryWhite,
+    backgroundColor: COLORS.PRIMARY_WHITE,
+    borderColor: COLORS.SECONDARY_WHITE,
     borderWidth:1,
     
   },
@@ -54,6 +53,6 @@ export const styles = StyleSheet.create({
     fontWeight: '500',
     lineHeight: 19.5,
     fontFamily: FONTS.MONTESRRAT_MEDIUM,
-    color: COLORS.primaryBlack,
+    color: COLORS.PRIMARY_BLACK,
   },
 });
