@@ -18,6 +18,15 @@ export const SCREEN_CONSTANTS={
         CONFIRMPASSWORD:'Confirm New Password',
         CONFIRMPASSWORDPLACEHOLDER:'Enter confirm new password',
          CONTINUE:'Continue'
-    }
-    
+    },
+    SELECT_TYPE:{
+        PRESCRIPTION:"Prescriptions",
+        LIST_OF_PRESCRIPTION:"List of Prescriptions",
+        REPORTS:"My Reports",
+        LIST_OD_REPORTS:"List of Reports"
+    },
+    REPORTS:{
+        HEADING:"My Reports",
+        SEARCH_PLACEHOLDER:'Search Report'
+    },    
 }

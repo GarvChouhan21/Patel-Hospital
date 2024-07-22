@@ -5,7 +5,6 @@ import {
   BottomSheetScrollView,
   BottomSheetBackdrop,
 } from '@gorhom/bottom-sheet';
-import { Easing } from 'react-native-reanimated';
 
 const BottomSheetModalComponent = ({
   bottomSheetModalRef,

@@ -3,7 +3,7 @@ import React, {useEffect, useRef, useState} from 'react';
 import {Controller, useForm, useFormState} from 'react-hook-form';
 import {styles} from './styles';
 import { COLORS } from '../../utils/Colors';
-import Icons from 'react-native-vector-icons/MaterialIcons'
+import Icons from 'react-native-vector-icons/Feather'
 export const InputField = ({
   multiline = false,
   label = '',
@@ -63,12 +63,12 @@ export const InputField = ({
                       {secureEntry ? (
                         <TouchableOpacity
                           onPress={() => setSecureEntry(!secureEntry)}>
-                           <Icons name='visibility' size={18}></Icons>
+                           <Icons name='eye' size={18}></Icons>
                         </TouchableOpacity>
                       ) : (
                         <TouchableOpacity
                           onPress={() => setSecureEntry(!secureEntry)}>
-                          <Icons name='visibility-off' size={18}></Icons>
+                          <Icons name='eye-off' size={18}></Icons>
                         </TouchableOpacity>
                       )}
                     </View>

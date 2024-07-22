@@ -1,11 +1,12 @@
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import { NavigationConstant } from '../utils/Screens';
+import { NavigationConstant, SCREEN_NAME } from '../utils/Screens';
 
 const Stack = createNativeStackNavigator();
 const RootNavigation = () => {
   return (
-    <Stack.Navigator
+    <Stack.Navigator 
+    initialRouteName={SCREEN_NAME.LOGIN}
       screenOptions={({navigation}) => ({
         headerShown: false,
         gestureEnabled: false,
