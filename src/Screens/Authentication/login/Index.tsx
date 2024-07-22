@@ -9,6 +9,7 @@ import CommonButton from '../../../commonComponents/commonButton';
 import { useNavigation } from '@react-navigation/native';
 import ForgotPasswordScreen from '../forgotPassword';
 
+
 const LoginScreen = () => {
   const navigation = useNavigation();
   const { control, handleSubmit } = useForm();
@@ -65,5 +66,5 @@ const LoginScreen = () => {
     </SafeAreaView>
   );
 };
-
+    
 export default LoginScreen;

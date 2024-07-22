@@ -19,5 +19,5 @@ export const SCREEN_CONSTANTS={
         CONFIRMPASSWORDPLACEHOLDER:'Enter confirm new password',
          CONTINUE:'Continue'
     }
-    
+
 }
