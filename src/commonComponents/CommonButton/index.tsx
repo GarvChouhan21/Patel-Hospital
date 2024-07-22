@@ -1,6 +1,6 @@
 import {View, Text, TouchableOpacity} from 'react-native';
 import React, {useState} from 'react';
-import {COLORS, Colors} from '../../utils/Colors';
+import {COLORS} from '../../utils/Colors';
 import {styles} from './styles';
 import { ActivityIndicator } from 'react-native';
 
@@ -43,41 +43,3 @@ const CommonButton = ({
 };
 
 export default CommonButton;
-
-export const SocialLoginButton = ({
-  Icon,
-  buttonText,
-  onPress,
-}: {
-  Icon: () => any;
-  buttonText: string;
-  onPress: () => any;
-}) => {
-  return (
-    <TouchableOpacity
-      style={styles.socialLoginButtonContainer}
-      onPress={onPress}>
-      <Icon />
-      <Text style={styles.TextStyle}>{buttonText}</Text>
-    </TouchableOpacity>
-  );
-};
-
-export const OutLineButton = ({
-  buttonText,
-  onPress,
-}: {
-  buttonText: string;
-  onPress: () => any;
-}) => {
-  const handlePress = () => {
-    onPress();
-  };
-  return (
-    <TouchableOpacity
-      style={styles.OutLineButtonContainer}
-      onPress={handlePress}>
-      <Text style={styles.outlineButtonText}>{buttonText}</Text>
-    </TouchableOpacity>
-  );
-};
