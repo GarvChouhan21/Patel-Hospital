@@ -23,7 +23,7 @@ const App = () => {
       />
       <NavigationContainer>
         <RootNavigation />
-      </NavigationContainer>
+      </NavigationContainer> 
     </View>
   );
 };
