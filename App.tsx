@@ -6,7 +6,6 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {NavigationContainer} from '@react-navigation/native';
 import RootNavigation from './src/navigation/RootNavigation';
 import {COLORS} from './src/utils/Colors';
-import Test from './src/commonComponents/Header/Test';
 
 const Stack = createNativeStackNavigator();
 const App = () => {

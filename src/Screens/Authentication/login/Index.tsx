@@ -6,8 +6,11 @@ import { AppLogo } from '../../../../assets/images';
 import { InputField } from '../../../commonComponents/InputField';
 import { SCREEN_CONSTANTS } from '../../../utils/screenConstants';
 import CommonButton from '../../../commonComponents/commonButton';
+import { useNavigation } from '@react-navigation/native';
+import ForgotPasswordScreen from '../forgotPassword';
 
 const LoginScreen = () => {
+  const navigation = useNavigation();
   const { control, handleSubmit } = useForm();
 
   const onSubmit = (data:any) => {
@@ -44,7 +47,7 @@ const LoginScreen = () => {
           }}
         />
         <View style={styles.forgetContainer}>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate('forgot')}>
             <Text style={styles.forgetText}>{SCREEN_CONSTANTS.LOGIN.FORGET_PASSWORD}</Text>
           </TouchableOpacity>
         </View>

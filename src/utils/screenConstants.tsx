@@ -7,5 +7,17 @@ export const SCREEN_CONSTANTS={
         FORGET_PASSWORD:'Forgot Password?',
         LOGIN:'Login'
     },
+    FORGOTPASSWORD:{
+        EMAIL:'Register Email Address',
+        EMAIL_PLACEHOLDER:'Enter register email address',
+        CONTINUE:'Continue'
+    },
+    CHANGEPASSWORD:{
+        NEWPASSWORD:'New Password',
+        NEWPASSWORD_PLACEHOLDER:'Enter new password',
+        CONFIRMPASSWORD:'Confirm New Password',
+        CONFIRMPASSWORDPLACEHOLDER:'Enter confirm new password',
+         CONTINUE:'Continue'
+    }
     
 }

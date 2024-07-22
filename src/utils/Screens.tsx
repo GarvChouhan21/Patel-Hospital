@@ -1,3 +1,5 @@
+import ChangePasswordScreen from "../screens/authentication/changePassword";
+import ForgotPasswordScreen from "../screens/authentication/forgotPassword";
 import LoginScreen from "../screens/authentication/login/Index";
 
 export const NavigationConstant=[
@@ -6,7 +8,11 @@ export const NavigationConstant=[
         component:LoginScreen
     },
     {
-        name:"forget",
-        component:LoginScreen
+        name:"forgot",
+        component:ForgotPasswordScreen
+    },
+    {
+        name:"changePassword",
+        component:ChangePasswordScreen
     }
 ]
