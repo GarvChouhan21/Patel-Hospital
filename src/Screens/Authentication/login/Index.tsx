@@ -47,7 +47,7 @@ const LoginScreen = () => {
           }}
         />
         <View style={styles.forgetContainer}>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate('forgot')}>
             <Text style={styles.forgetText}>
               {SCREEN_CONSTANTS.LOGIN.FORGET_PASSWORD}
             </Text>
