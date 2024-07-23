@@ -3,7 +3,7 @@ import {COLORS, FONTS} from '../../utils/Colors';
 export const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
-    backgroundColor:COLORS.APPBACK_GROUND
+    backgroundColor:COLORS.APPBACK_GROUND,
   },
   mainContainer: {
     flex: 1,
@@ -56,6 +56,12 @@ export const styles = StyleSheet.create({
     marginTop: 15,
   },
   btn: {
-    marginTop: 15,
+    position : 'static'
+  },
+  fixedButtonContainer: {
+    position: 'absolute',
+    bottom: 20, 
+    width: '100%',
+    alignItems: 'center',
   },
 });

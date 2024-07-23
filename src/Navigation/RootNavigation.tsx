@@ -1,15 +1,16 @@
 import React from 'react';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationConstant, SCREEN_NAME } from '../utils/Screens';
 
-const Stack = createNativeStackNavigator();
+
+const Stack = createStackNavigator();
 const RootNavigation = () => {
   return (
     <Stack.Navigator 
     initialRouteName={SCREEN_NAME.LOGIN}
       screenOptions={({navigation}) => ({
         headerShown: false,
-        gestureEnabled: false,
+       
         cardStyleInterpolator: ({current, layouts}) => ({
           cardStyle: {
             opacity: current.progress,

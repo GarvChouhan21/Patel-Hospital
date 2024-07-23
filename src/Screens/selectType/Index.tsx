@@ -4,8 +4,11 @@ import {styles} from './style';
 import {Prescription, Registration, ShareIcon} from '../../../assets/images';
 import {SCREEN_CONSTANTS} from '../../utils/screenConstants';
 import HeaderComponent from '../../commonComponents/commonHeader.tsx/Header';
+import { NavigationProp, useNavigation } from '@react-navigation/native';
+import { SCREEN_NAME } from '../../utils/Screens';
 
 const SelectType = () => {
+const navigation=useNavigation<NavigationProp<any>>()
   return (
     <SafeAreaView style={styles.container}>
       <HeaderComponent isleftLogo 
@@ -13,7 +16,7 @@ const SelectType = () => {
       isRightProfile={true}
       isRightComponent/>
      <View style={styles.mainContainer}>
-     <TouchableOpacity style={styles.selectContainer}>
+     <TouchableOpacity onPress={()=>navigation.navigate(SCREEN_NAME.COMMON_REPORT_SCREEN)} style={styles.selectContainer}>
         <View style={styles.flex}>
           <Text style={styles.cardHeading}>
             {SCREEN_CONSTANTS.SELECT_TYPE.PRESCRIPTION}
@@ -25,7 +28,7 @@ const SelectType = () => {
         </View>
         <Prescription />
       </TouchableOpacity>
-      <TouchableOpacity style={styles.selectContainer}>
+      <TouchableOpacity onPress={()=>navigation.navigate(SCREEN_NAME.COMMON_REPORT_SCREEN)} style={styles.selectContainer}>
         <View style={styles.flex}>
           <Text style={styles.cardHeading}>
             {SCREEN_CONSTANTS.SELECT_TYPE.PRESCRIPTION}

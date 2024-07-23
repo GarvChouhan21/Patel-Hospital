@@ -6,12 +6,17 @@ import CommonReports from "../screens/CommonReports/Index";
 import FilterComponent from "../screens/filter";
 import HomeScreen from "../screens/Home";
 import ImageView from "../screens/imageView";
+import AddEditProfile from "../screens/Profile/addEditProfile/Index";
+import ChangePassword from "../screens/Profile/changePassword";
+import ProfileMenu from "../screens/Profile/profileMenu/Index";
 import SelectType from "../screens/selectType/Index";
 
 export const SCREEN_NAME={
     LOGIN:'Login',
     SELECT_SCREEN:'select_type',
-    COMMON_REPORT_SCREEN:'report_screen'
+    COMMON_REPORT_SCREEN:'report_screen',
+    PROFILE_MENU:"profileMenu",
+    ADD_EDIT_PROFILE:"addEditProfile"
 }
 export const NavigationConstant=[
     {
@@ -23,7 +28,7 @@ export const NavigationConstant=[
         component:ForgotPasswordScreen
     },
     {
-        name:"changePassword",
+        name:"changePasswordScreen",
         component:ChangePasswordScreen
     }
     ,{
@@ -46,8 +51,20 @@ export const NavigationConstant=[
         name:"imageView",
         component:ImageView
     },
+    // {
+    //     name:"filter",
+    //     component:FilterComponent
+    // },
     {
-        name:"filter",
-        component:FilterComponent
+        name:SCREEN_NAME.PROFILE_MENU,
+        component:ProfileMenu
+    },
+    {
+        name:SCREEN_NAME.ADD_EDIT_PROFILE,
+        component:AddEditProfile
+    },
+    {
+        name:"changePassword",
+        component:ChangePassword
     }
 ]

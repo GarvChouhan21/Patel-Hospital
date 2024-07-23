@@ -17,5 +17,6 @@ PRIMARY_RED:'#F00'
 
 export const FONTS={
     MONTESERRAT_SEMIBOLD:"Montserrat-SemiBold",
-    MONTESRRAT_MEDIUM:"Montserrat-Medium"
+    MONTESRRAT_MEDIUM:"Montserrat-Medium",
+    INTER_MEDIUM:"Inter-Medium",
 }
