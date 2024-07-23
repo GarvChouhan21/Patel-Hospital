@@ -8,16 +8,25 @@ export const SCREEN_CONSTANTS={
         LOGIN:'Login'
     },
     FORGOTPASSWORD:{
+        HEADING:'Forgot Password',
         EMAIL:'Register Email Address',
         EMAIL_PLACEHOLDER:'Enter register email address',
         CONTINUE:'Continue'
     },
     CHANGEPASSWORD:{
+        HEADING:'Change Password',
         NEWPASSWORD:'New Password',
         NEWPASSWORD_PLACEHOLDER:'Enter new password',
         CONFIRMPASSWORD:'Confirm New Password',
         CONFIRMPASSWORDPLACEHOLDER:'Enter confirm new password',
-         CONTINUE:'Continue'
+        CONTINUE:'Continue'
+    },
+    OTPVERIFICATION:{
+        HEADING:'OTP Verification',
+        CONTINUE:'Continue'
+    },
+    HOMEPAGE:{
+        HEADING:'Report',
     },
     SELECT_TYPE:{
         PRESCRIPTION:"Prescriptions",

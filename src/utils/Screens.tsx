@@ -1,7 +1,10 @@
 import ChangePasswordScreen from "../screens/authentication/changePassword";
 import ForgotPasswordScreen from "../screens/authentication/forgotPassword";
 import LoginScreen from "../screens/authentication/login/Index";
+import OtpScreen from "../screens/authentication/otp";
 import CommonReports from "../screens/CommonReports/Index";
+import HomeScreen from "../screens/Home";
+import ImageView from "../screens/imageView";
 import SelectType from "../screens/selectType/Index";
 
 export const SCREEN_NAME={
@@ -29,6 +32,17 @@ export const NavigationConstant=[
     {
         name:SCREEN_NAME.COMMON_REPORT_SCREEN,
         component:CommonReports
-
+    },
+    {
+        name:"otpScreen",
+        component:OtpScreen
+    },
+    {
+        name:"home",
+        component:HomeScreen
+    },
+    {
+        name:"imageView",
+        component:ImageView
     }
 ]

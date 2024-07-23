@@ -6,7 +6,8 @@ export const styles = StyleSheet.create({
     },
     container : {
         flex : 1,
-        marginHorizontal:16
+        marginHorizontal:16,
+        marginTop : 10
     },
     buttonContainer : {
         flex : 1,
