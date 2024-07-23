@@ -3,6 +3,7 @@ import {COLORS, FONTS} from '../../utils/Colors';
 export const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
+    backgroundColor:COLORS.APPBACK_GROUND
   },
   mainContainer: {
     flex: 1,

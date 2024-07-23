@@ -47,7 +47,7 @@ const HomeScreen = () => {
           </View>
           <View style={styles.btn}>
             <CommonButton
-              onPress={navigation.navigate('imageView')}
+              // onPress={navigation.navigate('imageView')}
               disable={false}
               isSelected={true}
               buttonText="Download Report"

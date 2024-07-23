@@ -3,6 +3,7 @@ import ForgotPasswordScreen from "../screens/authentication/forgotPassword";
 import LoginScreen from "../screens/authentication/login/Index";
 import OtpScreen from "../screens/authentication/otp";
 import CommonReports from "../screens/CommonReports/Index";
+import FilterComponent from "../screens/filter";
 import HomeScreen from "../screens/Home";
 import ImageView from "../screens/imageView";
 import SelectType from "../screens/selectType/Index";
@@ -44,5 +45,9 @@ export const NavigationConstant=[
     {
         name:"imageView",
         component:ImageView
+    },
+    {
+        name:"filter",
+        component:FilterComponent
     }
 ]

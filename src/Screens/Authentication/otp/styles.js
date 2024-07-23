@@ -1,8 +1,10 @@
 import {StyleSheet} from 'react-native';
+import { COLORS } from '../../../utils/Colors';
 
 export const styles = StyleSheet.create({
   safeArea : {
-    flex : 1
+    flex : 1,
+    backgroundColor:COLORS.APPBACK_GROUND
   },
   container: {
     flex : 1,

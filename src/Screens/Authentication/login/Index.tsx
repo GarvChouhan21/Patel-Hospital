@@ -47,8 +47,7 @@ const LoginScreen = () => {
           }}
         />
         <View style={styles.forgetContainer}>
-          <TouchableOpacity onPress={() => navigation.navigate('otpScreen')}>
-          {/* <TouchableOpacity onPress={() => navigation.navigate('forgot')}> */}
+          <TouchableOpacity onPress={() => navigation.navigate('forgot')}>
             <Text style={styles.forgetText}>
               {SCREEN_CONSTANTS.LOGIN.FORGET_PASSWORD}
             </Text>
