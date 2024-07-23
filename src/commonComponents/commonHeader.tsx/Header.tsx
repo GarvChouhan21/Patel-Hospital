@@ -3,6 +3,7 @@ import React from 'react';
 import {AppLogo, BackArrow, SmallAppLogo} from '../../../assets/images';
 import {NavigationProp, useNavigation} from '@react-navigation/native';
 import { styles } from './style';
+import { SCREEN_NAME } from '../../utils/Screens';
 
 const HeaderComponent = ({
   isLeftIcon,
@@ -26,7 +27,7 @@ const HeaderComponent = ({
   isLeftPress?: boolean;
   onLeftPress?: () => any;
   isleftLogo?:boolean;
-  isRightProfile:any,
+  isRightProfile?:any,
   isEmpty?:any
 }) => {
   const navigation = useNavigation<NavigationProp<any>>();
@@ -60,7 +61,7 @@ const HeaderComponent = ({
       {isCenterText && <Text style={styles.centerTextStyle}>{centerText}</Text>}
       {isRightProfile ? <TouchableOpacity
           onPress={() =>
-            isLeftPress ? onLeftPress && onLeftPress() : navigation.goBack()
+            navigation.navigate(SCREEN_NAME.PROFILE_MENU)
           }>
           <Image source={require('../../../assets/images/UserImage.png')}/>
         </TouchableOpacity> : isRightComponent ? (

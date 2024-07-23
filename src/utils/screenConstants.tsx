@@ -29,4 +29,17 @@ export const SCREEN_CONSTANTS={
         HEADING:"My Reports",
         SEARCH_PLACEHOLDER:'Search Report'
     },    
+    PROFILE:{
+        HEADING:"Menu",
+        VIEW:'View Profile',
+        CHANGE_PASSWORD:"Change Password",
+        CONTACT_US:'Contact Us',
+        LOG_OUT:"Log Out",
+        NAME:'Full Name',
+        MOBILE_NUMBER:'Mobile Number',
+        EMAIL:'Email Address',
+        AGE:'Age',
+        GENDER:'Gender',
+        SAVE:'Save & Update'
+    }
 }
