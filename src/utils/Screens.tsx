@@ -8,6 +8,7 @@ import HomeScreen from "../screens/Home";
 import ImageView from "../screens/imageView";
 import AddEditProfile from "../screens/Profile/addEditProfile/Index";
 import ChangePassword from "../screens/Profile/changePassword";
+import ContactUsScreen from "../screens/Profile/contactUs";
 import ProfileMenu from "../screens/Profile/profileMenu/Index";
 import SelectType from "../screens/selectType/Index";
 
@@ -16,7 +17,12 @@ export const SCREEN_NAME={
     SELECT_SCREEN:'select_type',
     COMMON_REPORT_SCREEN:'report_screen',
     PROFILE_MENU:"profileMenu",
-    ADD_EDIT_PROFILE:"addEditProfile"
+    ADD_EDIT_PROFILE:"addEditProfile",
+    OTP_SCREEN:"otpScreen",
+    HOME:"home",
+    IMAGE_VIEW:"imageView",
+    FORGOT_PASSWORD:"forgot",
+    CONTACT_US:"contactUs"
 }
 export const NavigationConstant=[
     {
@@ -24,7 +30,7 @@ export const NavigationConstant=[
         component:LoginScreen
     },
     {
-        name:"forgot",
+        name:SCREEN_NAME.FORGOT_PASSWORD,
         component:ForgotPasswordScreen
     },
     {
@@ -40,15 +46,15 @@ export const NavigationConstant=[
         component:CommonReports
     },
     {
-        name:"otpScreen",
+        name:SCREEN_NAME.OTP_SCREEN,
         component:OtpScreen
     },
     {
-        name:"home",
+        name:SCREEN_NAME.HOME,
         component:HomeScreen
     },
     {
-        name:"imageView",
+        name:SCREEN_NAME.IMAGE_VIEW,
         component:ImageView
     },
     // {
@@ -66,5 +72,9 @@ export const NavigationConstant=[
     {
         name:"changePassword",
         component:ChangePassword
+    },
+    {
+        name:SCREEN_NAME.CONTACT_US,
+        component:ContactUsScreen
     }
 ]

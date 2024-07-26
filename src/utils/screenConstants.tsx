@@ -15,13 +15,13 @@ export const SCREEN_CONSTANTS={
     },
     CHANGEPASSWORD:{
         HEADING:'Change Password',
-        NEWPASSWORD:'New Password',
-        NEWPASSWORD_PLACEHOLDER:'Enter new password',
-        CONFIRMPASSWORD:'Confirm New Password',
-        CONFIRMPASSWORDPLACEHOLDER:'Enter confirm new password',
+        NEW_PASSWORD:'New Password',
+        NEW_PASSWORD_PLACEHOLDER:'Enter new password',
+        CONFIRM_PASSWORD:'Confirm New Password',
+        CONFIRM_PASSWORD_PLACEHOLDER:'Enter confirm new password',
         CONTINUE:'Continue',
-        CURRENTPASSWORD: 'Current Password',
-        CURRENTPASSWORDPLACEHOLDER: 'Enter current password',
+        CURRENT_PASSWORD: 'Current Password',
+        CURRENT_PASSWORD_PLACEHOLDER: 'Enter current password',
         FORGOT:'FORGOT?'
     },
     OTPVERIFICATION:{
@@ -53,5 +53,17 @@ export const SCREEN_CONSTANTS={
         AGE:'Age',
         GENDER:'Gender',
         SAVE:'Save & Update'
+    },
+    CONTACT_US:{
+        HEADING:"Contact Us",
+        FULL_NAME:"Full Name",
+        FULL_NAME_PLACEHOLDER:"Enter Full Name",
+        EMAIL:"Email",
+        EMAIL_PLACEHOLDER:"Enter Email",
+        SUBJECT:"Subject",
+        SUBJECT_PLACEHOLDER:"Enter Subject",
+        MESSAGE:"Message",
+        MESSAGE_PLACEHOLDER:"Enter Message",
+        SUBMIT:"Submit"
     }
 }

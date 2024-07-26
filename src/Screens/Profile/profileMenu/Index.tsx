@@ -10,6 +10,8 @@ import { SCREEN_NAME } from '../../../utils/Screens';
 
 const ProfileMenu = () => {
   const navigation=useNavigation<NavigationProp<any>>()
+
+  
   return (
     <SafeAreaView style={style.container}>
       <HeaderComponent
@@ -39,7 +41,7 @@ const ProfileMenu = () => {
             <RightArrow />
           </View>
         </TouchableOpacity>
-        <TouchableOpacity style={[style.profileContainer, style.margin]}>
+        <TouchableOpacity style={[style.profileContainer, style.margin]} onPress={() => navigation.navigate('contactUs')}>
           <View style={style.contentContainer}>
             <Support />
             <Text style={style.name}>
