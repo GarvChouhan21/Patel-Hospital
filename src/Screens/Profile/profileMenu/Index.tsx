@@ -10,6 +10,8 @@ import { SCREEN_NAME } from '../../../utils/Screens';
 
 const ProfileMenu = () => {
   const navigation=useNavigation<NavigationProp<any>>()
+
+  
   return (
     <SafeAreaView style={style.container}>
       <HeaderComponent
@@ -28,7 +30,7 @@ const ProfileMenu = () => {
             <Text style={style.view}>{SCREEN_CONSTANTS.PROFILE.VIEW}</Text>
           </TouchableOpacity>
         </View>
-        <TouchableOpacity style={[style.profileContainer, style.margin]}>
+        <TouchableOpacity style={[style.profileContainer, style.margin]} onPress={() => navigation.navigate('changePassword')}>
           <View style={style.contentContainer}>
             <Lock />
             <Text style={style.name}>
@@ -39,7 +41,7 @@ const ProfileMenu = () => {
             <RightArrow />
           </View>
         </TouchableOpacity>
-        <TouchableOpacity style={[style.profileContainer, style.margin]}>
+        <TouchableOpacity style={[style.profileContainer, style.margin]} onPress={() => navigation.navigate('contactUs')}>
           <View style={style.contentContainer}>
             <Support />
             <Text style={style.name}>

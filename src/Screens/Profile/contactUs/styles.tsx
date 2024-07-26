@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { COLORS } from "../../../utils/Colors";
+import { COLORS, FONTS } from "../../../utils/Colors";
 
 export const styles = StyleSheet.create({
     safeArea : {
@@ -16,4 +16,4 @@ export const styles = StyleSheet.create({
         justifyContent : 'flex-end',
         marginBottom : 16
     }
-})
+});

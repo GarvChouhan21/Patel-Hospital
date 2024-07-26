@@ -1,11 +1,13 @@
-import { Image, StyleSheet, Text, View } from 'react-native'
+import { Image, StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { COLORS, FONTS } from '../../utils/Colors'
 import { ShareIcon } from '../../../assets/images'
+import { useNavigation } from '@react-navigation/native'
 
 const CommonReportsCard = () => {
+  const navigation = useNavigation();
   return (
-    <View style={styles.container}>
+    <TouchableOpacity style={styles.container} onPress={() => navigation.navigate('home')}>
       <View style={styles.containerMain}>
         <Image style={styles.image} source={require('../../../assets/images/profile.png')}/>
         <View>
@@ -16,7 +18,7 @@ const CommonReportsCard = () => {
       <View style={styles.secondContainer}>
         <ShareIcon/>
       </View>
-    </View>
+    </TouchableOpacity>
   )
 }
 

@@ -10,7 +10,7 @@ const RootNavigation = () => {
     initialRouteName={SCREEN_NAME.LOGIN}
       screenOptions={({navigation}) => ({
         headerShown: false,
-        gestureEnabled: false,
+       
         cardStyleInterpolator: ({current, layouts}) => ({
           cardStyle: {
             opacity: current.progress,
