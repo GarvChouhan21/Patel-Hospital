@@ -1,29 +1,22 @@
-import React, { useState } from "react";
-import { SafeAreaView, View,Text } from "react-native";
+import React, { useEffect, useState } from "react";
+import {View,Text } from "react-native";
 import { Dropdown } from "react-native-element-dropdown";
 import { styles } from "./styles";
 
-
-const DropdownComponent = ({heading, optionHeading, data}:any) => {
+const DropdownComponent = ({heading, optionHeading, data, onChange, clear}:any) => {
     const [value, setValue] = useState(null);
     const [isFocus, setIsFocus] = useState(false);
-
-    // const renderLabel = () => {
-    //   if (value || isFocus) {
-    //     return (
-    //       <Text style={[styles.label, isFocus && { color: 'blue' }]}>
-    //         Dropdown label
-    //       </Text>
-    //     );
-    //   }
-    //   return null;
-    // };
+    useEffect(() => {
+      if (clear) {
+        setValue(null); 
+      }
+    }, [clear]);
+  
     return (
         <View style={styles.mainContainer}>
-          <View>
-              <Text style={styles.labelTextStyle}>{heading}</Text>
-          </View>
-        {/* {renderLabel()} */}
+        <View>
+            <Text style={styles.labelTextStyle}>{heading}</Text>
+        </View>
         <Dropdown
           style={[styles.dropdown, isFocus && { borderColor: 'blue' }]}
           placeholderStyle={styles.placeholderStyle}
@@ -33,6 +26,7 @@ const DropdownComponent = ({heading, optionHeading, data}:any) => {
           data={data}
           search
           maxHeight={300}
+          itemTextStyle={styles.color}
           labelField="label"
           valueField="value"
           placeholder={!isFocus ? `${optionHeading}` : '...'}
@@ -40,7 +34,8 @@ const DropdownComponent = ({heading, optionHeading, data}:any) => {
           value={value}
           onFocus={() => setIsFocus(true)}
           onBlur={() => setIsFocus(false)}
-          onChange={item => {
+          onChange={(item: any) => {
+            onChange(item)
             setValue(item.value);
             setIsFocus(false);
           }}

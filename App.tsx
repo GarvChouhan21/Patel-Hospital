@@ -1,15 +1,18 @@
-import {Platform, StatusBar, StyleSheet, Text, View} from 'react-native';
+import {Platform, StatusBar, StyleSheet, View} from 'react-native';
 import React, {useEffect} from 'react';
 import SplashScreen from 'react-native-splash-screen';
 import {NavigationContainer} from '@react-navigation/native';
 import RootNavigation from './src/navigation/RootNavigation';
 import {COLORS} from './src/utils/Colors';
+import ToastMessage from './src/commonComponents/CommonToastMessage';
 
 const App = () => {
   useEffect(() => {
-    if (Platform.OS == 'android') {
-      SplashScreen.hide();
-    }
+    setTimeout(()=> {
+      if (Platform.OS == 'android') {
+        SplashScreen.hide();
+      }
+    },1000)
   }, []);
 
   return (
@@ -20,6 +23,7 @@ const App = () => {
       />
       <NavigationContainer>
         <RootNavigation />
+        {ToastMessage()}
       </NavigationContainer>
     </View>
   );

@@ -5,7 +5,7 @@ export const SCREEN_CONSTANTS={
         PASSWORD:'Password',
         PASSWORD_PLACEHOLDER:'Enter password',
         FORGET_PASSWORD:'Forgot Password?',
-        LOGIN:'Login'
+        LOGIN:'Login',
     },
     FORGOTPASSWORD:{
         HEADING:'Forgot Password',
@@ -22,11 +22,15 @@ export const SCREEN_CONSTANTS={
         CONTINUE:'Continue',
         CURRENT_PASSWORD: 'Current Password',
         CURRENT_PASSWORD_PLACEHOLDER: 'Enter current password',
-        FORGOT:'FORGOT?'
+        FORGOT:'FORGOT?',
+        MSG: 'Your password must be at least 6 characters and should include a combination of numbers, letters and special characters (!$@%).',
+        FORGOT_PASSWORD: 'Forgot Password?'
     },
     OTPVERIFICATION:{
         HEADING:'OTP Verification',
-        CONTINUE:'Continue'
+        CONTINUE:'Continue',
+        Text1:'Didn’t Receive the OTP?',
+        Text2:'Resend OTP'
     },
     HOMEPAGE:{
         HEADING:'Report',
@@ -35,7 +39,7 @@ export const SCREEN_CONSTANTS={
         PRESCRIPTION:"Prescriptions",
         LIST_OF_PRESCRIPTION:"List of Prescriptions",
         REPORTS:"My Reports",
-        LIST_OD_REPORTS:"List of Reports"
+        LIST_OF_REPORTS:"List of Reports"
     },
     REPORTS:{
         HEADING:"My Reports",
@@ -47,12 +51,14 @@ export const SCREEN_CONSTANTS={
         CHANGE_PASSWORD:"Change Password",
         CONTACT_US:'Contact Us',
         LOG_OUT:"Log Out",
-        NAME:'Full Name',
+        FIRST_NAME:'First Name',
+        LAST_NAME:'Last Name',
         MOBILE_NUMBER:'Mobile Number',
         EMAIL:'Email Address',
         AGE:'Age',
         GENDER:'Gender',
-        SAVE:'Save & Update'
+        SAVE:'Save & Update',
+        Edit:'Edit'
     },
     CONTACT_US:{
         HEADING:"Contact Us",
@@ -65,5 +71,14 @@ export const SCREEN_CONSTANTS={
         MESSAGE:"Message",
         MESSAGE_PLACEHOLDER:"Enter Message",
         SUBMIT:"Submit"
+    },
+    PRESCRIPTION:{
+        HEADING:"Prescriptions",
+        SUB_HEADING:"List of Prescriptions",
+        SEARCH_PLACEHOLDER:"Search Prescriptions"
+    },
+    FILTER:{
+        HEADING:"Filter",
+        DATE:"Date"
     }
 }

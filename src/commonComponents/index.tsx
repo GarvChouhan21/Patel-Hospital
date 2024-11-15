@@ -23,8 +23,8 @@ const BottomSheetModalComponent = ({
 
   const animationConfigs = useMemo(
     () => ({
-      duration: 400, // Customize the duration for a slower animation
-      Easing: (value: number) => value, // Customize the easing function if needed
+      duration: 400, 
+      Easing: (value: number) => value, 
     }),
     []
   );
@@ -41,7 +41,7 @@ const BottomSheetModalComponent = ({
           {...props}
           disappearsOnIndex={-1}
           appearsOnIndex={1}
-          opacity={0.7} // Set the desired opacity for the dull effect
+          opacity={0.7} 
         />
       )}
     >

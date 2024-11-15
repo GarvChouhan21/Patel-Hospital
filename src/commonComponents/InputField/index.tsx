@@ -1,6 +1,6 @@
 import {View, Text, TextInput, TouchableOpacity} from 'react-native';
-import React, {useEffect, useRef, useState} from 'react';
-import {Controller, useForm, useFormState} from 'react-hook-form';
+import React, {useState} from 'react';
+import {Controller, useFormState} from 'react-hook-form';
 import {styles} from './styles';
 import { COLORS } from '../../utils/Colors';
 import Icons from 'react-native-vector-icons/Feather'
@@ -15,7 +15,7 @@ export const InputField = ({
   keyboardType,
   secureTextEntry = false,
   editable = true,
-  defaultValue = '',
+  defaultValue ,
   containerStyle,
 }: any) => {
   const {errors}: any = useFormState({control});
@@ -26,7 +26,7 @@ export const InputField = ({
     <View style={[styles.inputContainer, containerStyle]}>
      <Text style={styles.labelTextStyle}>{label}</Text>
       <Controller
-        defaultValue={defaultValue}
+        // defaultValue={defaultValue}
         control={control}
         render={({field}) => {
           return (
@@ -49,6 +49,8 @@ export const InputField = ({
                     secureTextEntry={secureEntry}
                     value={field.value}
                     keyboardType={keyboardType}
+                    defaultValue={defaultValue}
+                    autoCapitalize="none"
                     style={[
                       styles.font,
                       {...(secureTextEntry && {width: '90%'})},
@@ -63,12 +65,12 @@ export const InputField = ({
                       {secureEntry ? (
                         <TouchableOpacity
                           onPress={() => setSecureEntry(!secureEntry)}>
-                           <Icons name='eye' size={18}></Icons>
+                           <Icons name='eye' size={18} color={COLORS.SECONDARY_GRAY}></Icons>
                         </TouchableOpacity>
                       ) : (
                         <TouchableOpacity
                           onPress={() => setSecureEntry(!secureEntry)}>
-                          <Icons name='eye-off' size={18}></Icons>
+                          <Icons name='eye-off' size={18} color={COLORS.SECONDARY_GRAY}></Icons>
                         </TouchableOpacity>
                       )}
                     </View>
@@ -77,9 +79,9 @@ export const InputField = ({
               {errors && errors[name] && errors[name].message !== '' ? (
                 <Text
                   style={{
-                    // color: COLORS.primaryRed,
+                    color: COLORS.PRIMARY_RED,
                     fontSize: 14,
-                    marginTop: -8,
+                    // marginTop: -8,
                   }}>
                   {errors[name].message}
                 </Text>

@@ -16,6 +16,7 @@ export const styles = StyleSheet.create({
         backgroundColor: COLORS.PRIMARY_WHITE,
         borderColor: COLORS.SECONDARY_WHITE,
         borderWidth:1,
+        color: COLORS.PRIMARY_BLACK
       },
       icon: {
         marginRight: 5,
@@ -35,14 +36,17 @@ export const styles = StyleSheet.create({
       },
       selectedTextStyle: {
         fontSize: 16,
+        color: COLORS.PRIMARY_BLACK,
       },
       iconStyle: {
         width: 20,
         height: 20,
+        color: COLORS.PRIMARY_BLACK,
       },
       inputSearchStyle: {
         height: 40,
         fontSize: 16,
+        color: COLORS.PRIMARY_BLACK,
       },
       labelTextStyle: {
         fontSize: 16,
@@ -51,4 +55,7 @@ export const styles = StyleSheet.create({
         color: COLORS.PRIMARY_BLACK,
         marginBottom : 5
       },
+      color: {
+        color: COLORS.PRIMARY_BLACK
+      }
 });

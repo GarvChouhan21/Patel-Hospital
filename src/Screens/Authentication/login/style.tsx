@@ -2,13 +2,17 @@ import { StyleSheet } from "react-native";
 import { COLORS, FONTS } from "../../../utils/Colors";
 
 export const styles=StyleSheet.create({
+    scrollContainer: {
+        flex: 1,
+        backgroundColor: COLORS.APPBACK_GROUND,
+      },
     container:{
         flex:1,
         backgroundColor:COLORS.APPBACK_GROUND
     },
     appLogoContainer:{
         alignItems:"center",
-        marginTop:44,
+        marginTop:30,
         marginBottom:53
     },
     mainContainer:{
@@ -23,6 +27,7 @@ export const styles=StyleSheet.create({
         fontSize:16
     },
     buttonContainer:{
-        marginTop:32
+        marginHorizontal:16,
+        marginBottom:16
     }
 })

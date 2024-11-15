@@ -1,15 +1,13 @@
 import React from 'react';
 import {Image, SafeAreaView, TouchableOpacity, View} from 'react-native';
-import CommonButton from '../../commonComponents/commonButton';
 import {styles} from './styles';
 import HeaderComponent from '../../commonComponents/commonHeader.tsx/Header';
 import {useState} from 'react';
-import BottomSheetModalComponent from '../../commonComponents';
 
 const ImageView = () => {
   const [image, setImage] = useState('ODP1');
 
-  const toggleImage = imageName => {
+  const toggleImage = (imageName: any) => {
     setImage(imageName);
   };
 
@@ -44,7 +42,6 @@ const ImageView = () => {
             </TouchableOpacity>
           </View>
         </View>
-        {/* <BottomSheetModalComponent /> */}
       </View>
     </SafeAreaView>
   );

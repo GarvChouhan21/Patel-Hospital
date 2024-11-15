@@ -1,17 +1,71 @@
-import {Image, Text, TouchableOpacity, View} from 'react-native';
-import React from 'react';
+import {Alert, Image, Text, TouchableOpacity, View} from 'react-native';
+import React, {useState} from 'react';
 import {style} from './style';
 import {SafeAreaView} from 'react-native';
 import HeaderComponent from '../../../commonComponents/commonHeader.tsx/Header';
 import {SCREEN_CONSTANTS} from '../../../utils/screenConstants';
 import {Lock, Logout, RightArrow, Support} from '../../../../assets/images';
-import { NavigationProp, useNavigation } from '@react-navigation/native';
-import { SCREEN_NAME } from '../../../utils/Screens';
+import {
+  NavigationProp,
+  useFocusEffect,
+  useNavigation,
+} from '@react-navigation/native';
+import {SCREEN_NAME} from '../../../utils/Screens';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import {getProfileApi} from '../../../services/userApi';
 
 const ProfileMenu = () => {
-  const navigation=useNavigation<NavigationProp<any>>()
+  const navigation = useNavigation<NavigationProp<any>>();
+  const [data, setData] = useState({fullName: ''});
 
-  
+  useFocusEffect(
+    React.useCallback(() => {
+      getProfile();
+    }, []),
+  );
+
+  const logout = async () => {
+    try {
+      await AsyncStorage.setItem('isLoggedIn', JSON.stringify(false));
+      navigation.navigate(SCREEN_NAME.LOGIN);
+      console.log('logout in AsyncStorage');
+    } catch (error) {
+      console.error('Error saving data in AsyncStorage', error);
+    }
+  };
+
+  const getProfile = async () => {
+    try {
+      const result = await getProfileApi();
+      // console.log('result.......', result);
+      setData({
+        fullName: result.FULL_NAME,
+      });
+    } catch (error) {
+      console.error('Error in get profile', error);
+    }
+  };
+
+  const showAlert = (title: any, msg: any) =>
+    new Promise(resolve => {
+      Alert.alert(
+        title,
+        msg,
+        [
+          {
+            text: 'yes',
+            onPress: () => {
+              logout();
+            },
+          },
+          {
+            text: 'no',
+          },
+        ],
+        {cancelable: false},
+      );
+    });
+
   return (
     <SafeAreaView style={style.container}>
       <HeaderComponent
@@ -25,12 +79,16 @@ const ProfileMenu = () => {
             style={style.image}
             source={require('../../../../assets/images/profile.png')}
           />
-          <TouchableOpacity onPress={()=>navigation.navigate(SCREEN_NAME.ADD_EDIT_PROFILE)} style={style.nameContainer}>
-            <Text style={style.name}>Garv Chouhan</Text>
+          <TouchableOpacity
+            onPress={() => navigation.navigate(SCREEN_NAME.ADD_EDIT_PROFILE)}
+            style={style.nameContainer}>
+            <Text style={style.name}>{data.fullName}</Text>
             <Text style={style.view}>{SCREEN_CONSTANTS.PROFILE.VIEW}</Text>
           </TouchableOpacity>
         </View>
-        <TouchableOpacity style={[style.profileContainer, style.margin]} onPress={() => navigation.navigate('changePassword')}>
+        <TouchableOpacity
+          style={[style.profileContainer, style.margin]}
+          onPress={() => navigation.navigate(SCREEN_NAME.CHANGE_PASSWORD)}>
           <View style={style.contentContainer}>
             <Lock />
             <Text style={style.name}>
@@ -41,7 +99,9 @@ const ProfileMenu = () => {
             <RightArrow />
           </View>
         </TouchableOpacity>
-        <TouchableOpacity style={[style.profileContainer, style.margin]} onPress={() => navigation.navigate('contactUs')}>
+        <TouchableOpacity
+          style={[style.profileContainer, style.margin]}
+          onPress={() => navigation.navigate(SCREEN_NAME.CONTACT_US)}>
           <View style={style.contentContainer}>
             <Support />
             <Text style={style.name}>
@@ -52,14 +112,14 @@ const ProfileMenu = () => {
             <RightArrow />
           </View>
         </TouchableOpacity>
-        <TouchableOpacity style={[style.profileContainer, style.margin]}>
+        <TouchableOpacity
+          style={[style.profileContainer, style.margin]}
+          onPress={() => showAlert('', 'Are you sure you want to log out?')}>
           <View style={style.contentContainer}>
             <Logout />
             <Text style={style.name}>{SCREEN_CONSTANTS.PROFILE.LOG_OUT}</Text>
           </View>
-          <View style={[style.contentContainer, style.endBlock]}>
-            <RightArrow />
-          </View>
+          <View style={[style.contentContainer, style.endBlock]}></View>
         </TouchableOpacity>
       </View>
     </SafeAreaView>
@@ -67,3 +127,4 @@ const ProfileMenu = () => {
 };
 
 export default ProfileMenu;
+

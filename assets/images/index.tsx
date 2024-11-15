@@ -10,3 +10,6 @@ export {default as Lock} from "./Lock.svg"
 export {default as Logout} from "./Logout.svg"
 export {default as Support} from "./Support.svg"
 export {default as RightArrow} from "./RightArrow.svg"
+export {default as Cross} from "./Cross.svg"
+
+

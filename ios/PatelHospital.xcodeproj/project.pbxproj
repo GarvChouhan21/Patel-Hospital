@@ -13,8 +13,9 @@
 		0C80B921A6F3F58F76C31292 /* libPods-PatelHospital.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-PatelHospital.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		18052E3E2C493D29002FAF6E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18052E3D2C493D29002FAF6E /* Launch Screen.storyboard */; };
-		18052E3F2C493D3E002FAF6E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18052E3D2C493D29002FAF6E /* Launch Screen.storyboard */; };
+		187C22F82C80721700223B8F /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187C22F72C80721700223B8F /* Launch Screen.storyboard */; };
+		187C22F92C80734800223B8F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		187C22FA2C80734800223B8F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		18E47A6A2C4E88CA00669476 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18E47A562C4E88CA00669476 /* AntDesign.ttf */; };
 		18E47A6B2C4E88CA00669476 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18E47A572C4E88CA00669476 /* Entypo.ttf */; };
 		18E47A6C2C4E88CA00669476 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18E47A582C4E88CA00669476 /* EvilIcons.ttf */; };
@@ -78,7 +79,7 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = PatelHospital/main.m; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = PatelHospital/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		17D7A13590044B388D4BC8E2 /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-LightItalic.ttf"; path = "../assets/fonts/Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
-		18052E3D2C493D29002FAF6E /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		187C22F72C80721700223B8F /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		18E47A562C4E88CA00669476 /* AntDesign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AntDesign.ttf; sourceTree = "<group>"; };
 		18E47A572C4E88CA00669476 /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Entypo.ttf; sourceTree = "<group>"; };
 		18E47A582C4E88CA00669476 /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilIcons.ttf; sourceTree = "<group>"; };
@@ -167,9 +168,9 @@
 			children = (
 				18E47A692C4E88CA00669476 /* Fonts */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				187C22F72C80721700223B8F /* Launch Screen.storyboard */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
-				18052E3D2C493D29002FAF6E /* Launch Screen.storyboard */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
@@ -370,7 +371,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18052E3F2C493D3E002FAF6E /* Launch Screen.storyboard in Resources */,
+				187C22FA2C80734800223B8F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,7 +389,6 @@
 				003DD078CD90492F880E00E4 /* Montserrat-Bold.ttf in Resources */,
 				18E47A752C4E88CA00669476 /* Fontisto.ttf in Resources */,
 				A7E1CF49192B42B288590831 /* Montserrat-BoldItalic.ttf in Resources */,
-				18052E3E2C493D29002FAF6E /* Launch Screen.storyboard in Resources */,
 				909418B860FF4FAE8B492240 /* Montserrat-ExtraBold.ttf in Resources */,
 				18E47A772C4E88CA00669476 /* Ionicons.ttf in Resources */,
 				18E47A6D2C4E88CA00669476 /* Feather.ttf in Resources */,
@@ -397,6 +397,7 @@
 				EFFBA007C1E44A0FA86CF526 /* Montserrat-ExtraBoldItalic.ttf in Resources */,
 				18E47A7A2C4E88CA00669476 /* Octicons.ttf in Resources */,
 				71FCAD80006647AF8866C173 /* Montserrat-ExtraLight.ttf in Resources */,
+				187C22F82C80721700223B8F /* Launch Screen.storyboard in Resources */,
 				54DBDFBF0FF24FBF8A7E4E56 /* Montserrat-ExtraLightItalic.ttf in Resources */,
 				7EC7ADACE7F84C3580257ED4 /* Montserrat-Italic.ttf in Resources */,
 				18E47A702C4E88CA00669476 /* FontAwesome5_Regular.ttf in Resources */,
@@ -411,6 +412,7 @@
 				077E51F1345F4C99A7BBD640 /* Montserrat-Regular.ttf in Resources */,
 				3C466B1830F84B0DA35D2E0C /* Montserrat-SemiBold.ttf in Resources */,
 				18E47A7C2C4E88CA00669476 /* Zocial.ttf in Resources */,
+				187C22F92C80734800223B8F /* Images.xcassets in Resources */,
 				8DC3B6B5A64A4ABFA00F0025 /* Montserrat-SemiBoldItalic.ttf in Resources */,
 				FE7E82D343D34C7DBED780BF /* Montserrat-Thin.ttf in Resources */,
 				325F55341D1A4F1EA4ABBD29 /* Montserrat-ThinItalic.ttf in Resources */,

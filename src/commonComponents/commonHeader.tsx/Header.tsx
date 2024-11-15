@@ -1,6 +1,6 @@
 import {View, Text, TouchableOpacity, Image} from 'react-native';
 import React from 'react';
-import {AppLogo, BackArrow, SmallAppLogo} from '../../../assets/images';
+import {BackArrow, SmallAppLogo} from '../../../assets/images';
 import {NavigationProp, useNavigation} from '@react-navigation/native';
 import { styles } from './style';
 import { SCREEN_NAME } from '../../utils/Screens';

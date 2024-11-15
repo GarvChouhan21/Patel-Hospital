@@ -1,66 +1,103 @@
-import { Image, StyleSheet, Text, View, TouchableOpacity } from 'react-native'
-import React from 'react'
-import { COLORS, FONTS } from '../../utils/Colors'
-import { ShareIcon } from '../../../assets/images'
-import { useNavigation } from '@react-navigation/native'
+import {Image, Text, View, TouchableOpacity, FlatList} from 'react-native';
+import React from 'react';
+import {ShareIcon} from '../../../assets/images';
+import {useNavigation, NavigationProp} from '@react-navigation/native';
+import {SCREEN_NAME} from '../../utils/Screens';
+import {styles} from './style';
 
-const CommonReportsCard = () => {
-  const navigation = useNavigation();
-  return (
-    <TouchableOpacity style={styles.container} onPress={() => navigation.navigate('home')}>
-      <View style={styles.containerMain}>
-        <Image style={styles.image} source={require('../../../assets/images/profile.png')}/>
-        <View>
-            <Text style={styles.reportName}>X-ray</Text>
+const CommonReportsCard = ({
+  reports,
+  data,
+  filteredData,
+  searchInputData,
+  screenType,
+}: any) => {
+  const navigation = useNavigation<NavigationProp<any>>();
+
+    const filteredPrescriptions = filteredData
+    ? (reports || data).filter(
+        (item: any) => item.DOCID && item.DOCID === filteredData.drId,
+      )
+    : reports || data;
+
+  const filteredAndSearchedData = searchInputData
+    ? filteredPrescriptions.filter((item: any) =>
+        item.DOCID?.toString().includes(searchInputData.toString()),
+      )
+    : filteredPrescriptions;
+
+  // const filteredPrescriptions =
+  //   screenType === 'prescription'
+  //     ? filteredData
+  //       ? data.filter(
+  //           (item: any) => item.DOCID && item.DOCID === filteredData.drId,
+  //         )
+  //       : data
+  //     : filteredData
+  //     ? reports.filter(
+  //         (item: any) => item.INVESTIGATIONS == filteredData.INVESTIGATIONS,
+  //       )
+  //     : reports;
+
+  // const filteredAndSearchedData =
+  //   screenType === 'prescription'
+  //     ? searchInputData
+  //       ? filteredPrescriptions.filter((item: any) =>
+  //           item.DOCID?.toString().includes(searchInputData.toString()),
+  //         )
+  //       : filteredPrescriptions
+  //     :  filteredPrescriptions.filter((item: any) =>
+  //         item.INVESTIGATIONS?.toString().includes(searchInputData.toString()),
+  //       );
+
+  const handlePress = (report: any) => {
+    report.MRNO && report.VISITID
+      ? navigation.navigate(SCREEN_NAME.PRESCRIPTION_DETAIILS, {
+          mrno: report.MRNO,
+          visitId: report.VISITID,
+        })
+      : navigation.navigate(SCREEN_NAME.REPORT_DETAILS, {
+          reqId: report.REQID,
+          testId: report.TESTID,
+          investigations: report.INVESTIGATIONS,
+        });
+  };
+
+  const renderItem = ({item}: any) => {
+    return (
+      <TouchableOpacity
+        style={styles.container}
+        onPress={() => handlePress(item)}>
+        <View style={styles.containerMain}>
+          <Image
+            style={styles.image}
+            source={require('../../../assets/images/profile.png')}
+          />
+          <View>
+            <View style={styles.resportStyle}>
+              <Text style={styles.reportName}>
+                {item.DOCID || item.INVESTIGATIONS}
+              </Text>
+            </View>
             <Text style={styles.reportDescription}>By Dr. Govind Sarkar</Text>
+            {/* <Text style={styles.reportDescription}>{item.drName}</Text> */}
+          </View>
         </View>
-      </View>
-      <View style={styles.secondContainer}>
-        <ShareIcon/>
-      </View>
-    </TouchableOpacity>
-  )
-}
+        <View style={styles.secondContainer}>
+          <ShareIcon />
+        </View>
+      </TouchableOpacity>
+    );
+  };
 
-export default CommonReportsCard
+  return (
+    <FlatList
+      showsVerticalScrollIndicator={false}
+      data={filteredAndSearchedData}
+      renderItem={renderItem}
+      keyExtractor={item => item.id}
+    />
+  );
+};
 
-const styles = StyleSheet.create({
-    container:{
-        borderWidth:1,
-        marginHorizontal:12,
-        padding:17,
-        backgroundColor:COLORS.PRIMARY_WHITE,
-        borderRadius:20,
-        borderColor: COLORS.PRIMARY_GRAY,
-        flexDirection:"row",
-        marginTop:18
-    },
-    image:{
-        alignItems:"center",
-        justifyContent:"center",
-        borderRadius:51,
-        height:51,
-        width:51
-    },
-    reportName:{
-        fontFamily:FONTS.MONTESERRAT_SEMIBOLD,
-        color:COLORS.PRIMARY_BLACK,
-        fontSize:14
-    },
-    containerMain:{
-        flexDirection:"row",
-        alignItems:"center",
-        gap:16
-    },
-    reportDescription:{
-        fontFamily:FONTS.MONTESERRAT_SEMIBOLD,
-        color:COLORS.SECONDARY_GRAY,
-        fontSize:12,
-        marginTop:3
-    },
-    secondContainer:{
-        flex:1,
-        alignItems:"flex-end",
-        justifyContent:"center"
-    }
-})
+export default CommonReportsCard;
